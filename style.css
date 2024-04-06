@@ -1,0 +1,154 @@
+/* Importa as fontes do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+
+/* variáveis para cores */
+:root {
+    --background-color: #FDEDD4;
+    --text-color: #B39768;
+    --hover-color: black;
+    --card-background: #eeddc0;
+    --card-border: #ccc;
+    --shadow-color: rgba(0, 0, 0, 0.1);
+    --hover-shadow-color: rgba(0, 0, 0, 0.2);
+}
+
+/* variáveis para fontes */
+:root {
+    --primary-font: "Shadows Into Light", cursive;
+    --secondary-font: "Nanum Gothic", sans-serif;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* header */
+header {
+    background-color: var(--background-color);
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px;
+    border-bottom: 0.5px solid rgba(201, 199, 199, 0.259);
+    align-items: center;
+}
+
+.logo {
+    width: 150px;
+    margin-right: 10px;
+    overflow: hidden;
+    margin-top: 10px;
+    margin-left: 5px;
+    align-items: center;
+    margin: 0;
+}
+
+nav > ul {
+    display: flex;
+    font-weight: bold;
+    margin-right: 50px;
+    font-size: 18px;  
+    align-items: center;
+    margin: 0;
+    font-family: var(--primary-font);
+}
+
+nav > ul a {
+    padding: 35px 20px;
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+nav > ul a:hover {
+    color: var(--hover-color);
+}
+
+.form-nav {
+    display: flex;
+    align-items: center;
+}
+
+.input-search {
+    border: none;
+    padding: 8px 10px;
+    border-radius: 20px;
+}
+
+.button-search {
+    border: none;
+    padding: 6px 8px;
+    border-radius: 20px;
+    background-color: var(--text-color);
+}
+
+/* main */
+.h1-main {
+    text-align: center;
+    font-family: var(--primary-font);
+    margin-top: 15px;
+}
+
+/* card */
+.cat-card {
+    background-color: var(--card-background);
+    width: 30%;
+    border: 1px solid var(--card-border);
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0 4px 8px var(--shadow-color);
+    transition: box-shadow 0.3s ease;
+    font-family: var(--secondary-font);
+}
+
+.cat-card:hover {
+    box-shadow: 0 8px 16px var(--hover-shadow-color);
+}
+
+.cat-name {
+    font-family: var(--primary-font);
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+}
+
+.cat-image {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.cat-info {
+    font-size: 1rem;
+}
+
+#card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/*  responsividade */
+@media screen and (max-width: 768px) {
+    #card {
+        flex-direction: column; 
+    }
+
+    .cat-card {
+        width: 95%;
+        
+    }
+
+    .logo{
+        width: 100px;
+
+    }
+
+    nav > ul {
+        font-size: 15px;
+    }
+}
