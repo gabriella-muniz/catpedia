@@ -7,7 +7,7 @@
     --background-color: #FDEDD4;
     --text-color: #B39768;
     --hover-color: black;
-    --card-background: #eeddc0;
+    --card-background: #f1f0ef;
     --card-border: #ccc;
     --shadow-color: rgba(0, 0, 0, 0.1);
     --hover-shadow-color: rgba(0, 0, 0, 0.2);
@@ -66,32 +66,40 @@ nav > ul a:hover {
     color: var(--hover-color);
 }
 
-.form-nav {
-    display: flex;
-    align-items: center;
-}
-
-.input-search {
-    border: none;
-    padding: 8px 10px;
-    border-radius: 20px;
-}
-
-.button-search {
-    border: none;
-    padding: 6px 8px;
-    border-radius: 20px;
-    background-color: var(--text-color);
-}
 
 /* main */
 .h1-main {
     text-align: center;
     font-family: var(--primary-font);
     margin-top: 15px;
+    padding-top: 20px;
 }
 
+.form-search {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+
+.search, .button-search {
+    padding: 8px 10px;
+    border-radius: 20px;
+    border-radius: 20px;
+    border: 1px solid #CCC;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    margin: 20px 0px;
+
+}
+
+
 /* card */
+#card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
 .cat-card {
     background-color: var(--card-background);
     width: 30%;
@@ -102,6 +110,7 @@ nav > ul a:hover {
     box-shadow: 0 4px 8px var(--shadow-color);
     transition: box-shadow 0.3s ease;
     font-family: var(--secondary-font);
+    
 }
 
 .cat-card:hover {
@@ -126,11 +135,68 @@ nav > ul a:hover {
     font-size: 1rem;
 }
 
-#card {
+.form-search{
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+   justify-content: center;
 }
+
+#graphic{
+    background-color: rgb(229, 226, 226);
+    padding-bottom: 30px;
+}
+ 
+/* footer */
+footer {
+    background: #000;
+    color: #fff;
+    padding: 0px 8%;
+    margin-top: 20px;
+  }
+    .footer-principal{
+      max-width: 120rem;
+      margin: auto;
+      width: 100%;
+      
+    }
+  
+  footer>.footer-top {
+    display: flex;
+    justify-content: space-between;
+    padding: 7% 0;
+    
+  }
+  
+  .footer-top h4 {
+    margin-bottom: 1.6rem;
+  }
+  
+  .footer-top>div:first-child {
+    width: 40%;
+  }
+  
+  .footer-top p {
+    color: #eee;
+    font-size: 0.9rem;
+    line-height: 1.7;
+  }
+  
+  .footer-top i {
+    font-size: 1.6rem;
+    padding: 0rem 5px;
+    color: #ccc;
+  }
+  
+  .footer-bottom {
+    border-top: 1px solid #444;
+    display: flex;
+    justify-content: center;
+    padding: 2.6rem 0;
+    font-size: 0.7rem;
+    background-color: #000;
+    
+  }
+
+  
 
 /*  responsividade */
 @media screen and (max-width: 768px) {
@@ -150,5 +216,9 @@ nav > ul a:hover {
 
     nav > ul {
         font-size: 15px;
+    }
+
+    .h1-main{
+       font-size: 35px;
     }
 }
