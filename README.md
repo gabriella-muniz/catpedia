@@ -3,7 +3,7 @@ Catpédia é um aplicativo web simplescriado para exibir informações sobre ra�
 web de forma clara e organizada, incluindo gráficos de análise.
 
 ## :smile: Demo 
-Você pode acessar o projeto <a href=""> clicando aqui.</a>
+Você pode acessar o projeto <a href="https://gabriella-muniz.github.io/catpedia/"> Clicando aqui.</a>
 
  ## :rocket:  Tecnologias
 
@@ -12,6 +12,7 @@ Você pode acessar o projeto <a href=""> clicando aqui.</a>
 - CSS Flexbox
 - Media Queries
 - Bootstrap
+- Font Awesome 
 
 by Gabriella Muniz :art:
 
